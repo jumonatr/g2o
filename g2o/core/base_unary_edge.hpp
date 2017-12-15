@@ -100,7 +100,7 @@ void BaseUnaryEdge<D, E, VertexXiType>::linearizeOplus()
   vi->lockQuadraticForm();
 #endif
 
-  const number_t delta = cst(1e-9);
+  const number_t delta = G2O_FLOATING_POINT_STEP_SIZE;
   const number_t scalar = 1 / (2*delta);
   ErrorVector error1;
   ErrorVector errorBeforeNumeric = _error;

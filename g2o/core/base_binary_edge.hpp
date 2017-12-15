@@ -153,7 +153,7 @@ void BaseBinaryEdge<D, E, VertexXiType, VertexXjType>::linearizeOplus()
   vj->lockQuadraticForm();
 #endif
 
-  const number_t delta = cst(1e-9);
+  const number_t delta = G2O_FLOATING_POINT_STEP_SIZE;
   const number_t scalar = 1 / (2*delta);
   ErrorVector errorBak;
   ErrorVector errorBeforeNumeric = _error;

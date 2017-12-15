@@ -39,6 +39,8 @@
     #endif
 #endif
 
+#define G2O_FLOATING_POINT_STEP_SIZE ((number_t)@G2O_FLOATING_POINT_STEP_SIZE@)
+
 #cmakedefine G2O_CXX_COMPILER "@G2O_CXX_COMPILER@"
 
 #ifdef __cplusplus

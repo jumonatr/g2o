@@ -162,6 +162,8 @@ IF(G2O_BUILD_EXAMPLES)
   MESSAGE(STATUS "Compiling g2o examples")
 ENDIF(G2O_BUILD_EXAMPLES)
 
+SET(G2O_FLOATING_POINT_STEP_SIZE "1e-9" CACHE STRING "Sets the value g2o uses for numerical differentiation")
+
 OPTION(G2O_FAST_MATH "Enable fast math operations" OFF)
 OPTION(G2O_NO_IMPLICIT_OWNERSHIP_OF_OBJECTS "Disables memory management in the graph types, this requires the callers to manager the memory of edges and nodes" OFF)
 
